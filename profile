@@ -1,0 +1,1 @@
+/home/brian/~/.local/share/dotfiles/profile
