@@ -1,1 +1,0 @@
-/home/brian/~/.local/share/dotfiles/zshrc
