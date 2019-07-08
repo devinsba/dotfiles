@@ -30,3 +30,6 @@ export SDKMAN_DIR="$HOME/.local/opt/sdkman"
 
 source ~/.local/share/rvm/scripts/rvm
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
