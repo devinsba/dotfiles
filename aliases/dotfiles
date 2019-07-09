@@ -1,2 +1,0 @@
-alias cddf="cd $DOTFILES_DIR"
-alias dfup="cd $DOTFILES_DIR && git pull"
