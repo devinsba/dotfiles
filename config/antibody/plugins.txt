@@ -1,3 +1,4 @@
+robbyrussell/oh-my-zsh path:lib/directories.zsh
 robbyrussell/oh-my-zsh path:lib/git.zsh
 robbyrussell/oh-my-zsh path:lib/theme-and-appearance.zsh
 robbyrussell/oh-my-zsh path:themes/jreese.zsh-theme
