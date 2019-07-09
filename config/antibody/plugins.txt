@@ -5,9 +5,7 @@ robbyrussell/oh-my-zsh path:lib/git.zsh
 robbyrussell/oh-my-zsh path:lib/theme-and-appearance.zsh
 robbyrussell/oh-my-zsh path:themes/jreese.zsh-theme
 
-robbyrussell/oh-my-zsh path:plugins/nvm
 robbyrussell/oh-my-zsh path:plugins/pyenv
-robbyrussell/oh-my-zsh path:plugins/rvm
 robbyrussell/oh-my-zsh path:plugins/sdk
 
 zsh-users/zsh-autosuggestions
