@@ -1,2 +1,2 @@
 alias cddf="cd $DOTFILES_DIR"
-alias dfup="cd $DOTFILES_DIR && git pull && antibody bundle < config/antibody/plugins.txt > config/antibody/plugins.zsh && git status && cd -"
+alias dfup="cd $DOTFILES_DIR && git pull && update_antibody_plugin_cache && cd -"
