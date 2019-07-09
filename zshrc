@@ -1,35 +1,18 @@
-export ADOTDIR="$HOME/.config/antigen"
-source $HOME/.local/share/antigen/antigen.zsh
-antigen use oh-my-zsh
+export XDG_CONFIG_HOME="${HOME}/.config"
 
-antigen bundle git
-antigen bundle zsh-users/zsh-syntax-highlighting
+export DOTFILES_DIR="${HOME}/.local/opt/dotfiles"
 
-antigen theme jreese
-
-antigen apply
-
-export PATH="${HOME}/.local/bin:${PATH}"
-
-export DOTFILES_DIR="$(dirname $(readlink $HOME/.zshrc))"
-
-for f in "$DOTFILES_DIR"/aliases/*; do source $f; done
-
-export PYENV_ROOT="$HOME/.local/opt/pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+    compinit -i
+else
+    compinit -C -i
 fi
 
-export NVM_DIR="$HOME/.local/share/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+for alias_file in $(ls ${HOME}/.local/lib/aliases/); do
+    source "${HOME}/.local/lib/aliases/${alias_file}"
+done
 
-# Enable sdkman
-export SDKMAN_DIR="$HOME/.local/opt/sdkman"
-[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+source "${HOME}/.config/antibody/plugins.zsh"
 
-source ~/.local/share/rvm/scripts/rvm
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="${HOME}/.local/bin:${PATH}"

@@ -1,0 +1,11 @@
+devinsba/zsh-plugins
+
+robbyrussell/oh-my-zsh path:lib/directories.zsh
+robbyrussell/oh-my-zsh path:lib/git.zsh
+robbyrussell/oh-my-zsh path:lib/theme-and-appearance.zsh
+robbyrussell/oh-my-zsh path:themes/jreese.zsh-theme
+
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
