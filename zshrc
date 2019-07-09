@@ -13,6 +13,12 @@ for alias_file in $(ls ${HOME}/.local/lib/aliases/); do
     source "${HOME}/.local/lib/aliases/${alias_file}"
 done
 
-source "${HOME}/.config/antibody/plugins.zsh"
+if [[ -s "${HOME}/.config/antibody/plugins.zsh" ]]; then
+    source "${HOME}/.config/antibody/plugins.zsh"
+else
+    eval "$(antibody bundle devinsba/zsh-plugins)"
+    update_antibody_plugin_cache
+    source "${HOME}/.config/antibody/plugins.zsh"
+fi
 
 export PATH="${HOME}/.local/bin:${PATH}"
