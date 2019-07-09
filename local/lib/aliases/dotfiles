@@ -1,2 +1,10 @@
 alias cddf="cd $DOTFILES_DIR"
-alias dfup="cd $DOTFILES_DIR && git pull && update_antibody_plugin_cache && cd -"
+
+function dfup() {
+    (
+        cd $DOTFILES_DIR
+        git pull
+        antibody update
+        update_antibody_plugin_cache
+    )
+}
