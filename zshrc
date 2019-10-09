@@ -13,6 +13,10 @@ for alias_file in $(ls ${HOME}/.local/lib/aliases/); do
     source "${HOME}/.local/lib/aliases/${alias_file}"
 done
 
+for include_file in $(ls ${HOME}/.local/lib/zsh-includes/); do
+    source "${HOME}/.local/lib/zsh-includes/${include_file}"
+done
+
 if [[ -s "${HOME}/.config/antibody/plugins.zsh" ]]; then
     source "${HOME}/.config/antibody/plugins.zsh"
 else
