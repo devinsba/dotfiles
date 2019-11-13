@@ -26,3 +26,4 @@ else
 fi
 
 export PATH="${HOME}/.local/bin:${PATH}"
+export PATH=$PATH:/usr/local/kubebuilder/bin
