@@ -1,9 +1,10 @@
 devinsba/zsh-plugins
 
-robbyrussell/oh-my-zsh path:lib/directories.zsh
-robbyrussell/oh-my-zsh path:lib/git.zsh
-robbyrussell/oh-my-zsh path:lib/theme-and-appearance.zsh
-robbyrussell/oh-my-zsh path:themes/jreese.zsh-theme
+ohmyzsh/ohmyzsh path:lib/directories.zsh
+ohmyzsh/ohmyzsh path:lib/completion.zsh
+ohmyzsh/ohmyzsh path:lib/git.zsh
+ohmyzsh/ohmyzsh path:lib/theme-and-appearance.zsh
+ohmyzsh/ohmyzsh path:themes/jreese.zsh-theme
 
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions

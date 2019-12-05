@@ -27,3 +27,4 @@ fi
 
 export PATH="${HOME}/.local/bin:${PATH}"
 
+[ -s "${HOME}/.config/fzf/init.zsh" ] && source ${HOME}/.config/fzf/init.zsh
