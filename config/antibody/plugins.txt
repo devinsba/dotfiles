@@ -1,7 +1,8 @@
 devinsba/zsh-plugins
 
-ohmyzsh/ohmyzsh path:lib/directories.zsh
 ohmyzsh/ohmyzsh path:lib/completion.zsh
+ohmyzsh/ohmyzsh path:lib/directories.zsh
+ohmyzsh/ohmyzsh path:lib/history.zsh
 ohmyzsh/ohmyzsh path:lib/git.zsh
 ohmyzsh/ohmyzsh path:lib/theme-and-appearance.zsh
 ohmyzsh/ohmyzsh path:themes/jreese.zsh-theme
